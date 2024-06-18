@@ -1,0 +1,109 @@
+.container {
+    width: 66%;
+    min-width: 800px;
+    position: absolute;
+    top: 20%;
+  }
+  
+  .ss {
+    display: flex;
+    align-items: center;
+    background: url('https://unsplash.s3.amazonaws.com/batch%206/park-place.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0 auto;
+    width: 66%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .login {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    z-index: 1; /* Ensure login form is above the background image */
+    position: relative; /* Ensure proper stacking context */
+  }
+  
+  .login h1 {
+    color: #10146D;
+    font-size: 36px;
+    padding: 30px;
+    background-color: #ebecf1;
+  }
+  
+  .login-content {
+    padding: 30px 30px 50px 30px;
+  }
+  
+  label {
+    display: block;
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    width: 80%;
+    background-color: #ccc;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input:focus {
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    color: #fff;
+    background-color: #10146D;
+    border: none;
+    font-family: 'Rokkitt', serif;
+    font-size: 24px;
+    margin-top: 25px;
+    width: 60%;
+    transition: all .5s ease;
+  }
+  
+  button:hover {
+    background-color: #A64141;
+    cursor: pointer;
+    color: #f4f4f4;
+  }
+  
+  .side-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 88%; 
+    z-index: 0; 
+    width:500px;
+  }
+  
+  .side-picture img {
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 10px;
+    width: auto ; 
+    height: 100%; 
+  }
+  
+  
+  .show {
+    opacity: 1;
+  }
+  
