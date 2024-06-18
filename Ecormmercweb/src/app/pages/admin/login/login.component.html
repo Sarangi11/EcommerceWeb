@@ -7,7 +7,7 @@
         <input type="text" name="userName" [(ngModel)]="loginObj.userName"  id="UserName"  placeholder="UserName"  >
         <label id="passwordLabel">Please enter your password</label>
         <input type="password" name="password" [(ngModel)]="loginObj.password" id="password" placeholder="Password"  ><br>
-        <button type="button" value="Login">Login</button>
+        <button type="button" value="Login" (click)="onLogin()">Login</button>
         
       </div>
       
