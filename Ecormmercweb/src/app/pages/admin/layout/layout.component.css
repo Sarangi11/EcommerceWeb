@@ -1,0 +1,14 @@
+.navbar-nav .nav-link {
+    margin-right: 15px; 
+  }
+  
+  .custom-navbar-btn {
+    background-color: #28a745; 
+    color: white; 
+  }
+  
+  .custom-navbar-btn:hover {
+    background-color: #218838; 
+    color: white; 
+  }
+  
