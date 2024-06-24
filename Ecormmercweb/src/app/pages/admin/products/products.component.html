@@ -12,43 +12,38 @@
           </div>
         </div>
         <div class="card-body">
-            <div class="row">
+          <div class="row">
             <div class="col-3">
-                <div class="card">
-                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                  </div>
-
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                  </div>
-                  
+              <div class="card">
+                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                  </div>
-                  
+              <div class="card">
+                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
             </div>
-
+            <div class="col-3">
+              <div class="card">
+                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
             </div>
-         
+          </div>
         </div>
       </div>
     </div>
@@ -66,13 +61,46 @@
           </div>
         </div>
         <div class="card-body">
-            <div class="row">
-                <div class="col-6">
-                    <label for="">SKU</label>
-                    in
-                </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="sku">SKU</label>
+              <input type="text" id="sku" [(ngModel)]="productobj.productsku" class="form-control">
             </div>
-          
+            <div class="col-6">
+              <label for="name">Name</label>
+              <input type="text" id="name" [(ngModel)]="productobj.productName" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="shortName">Short Name</label>
+              <input type="text" id="shortName" [(ngModel)]="productobj.productShortName" class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="price">Price</label>
+              <input type="text" id="price" [(ngModel)]="productobj.productPrice" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="category">Category</label>
+              <input type="text" id="category" [(ngModel)]="productobj.category" class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="deliveryTimeSpan">Delivery Time Span</label>
+              <input type="text" id="deliveryTimeSpan" [(ngModel)]="productobj.deliveryTimeSpan" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="imageUrl">Image Url</label>
+              <input type="text" id="imageUrl" [(ngModel)]="productobj.productImageUrl" class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="description">Product Description</label>
+              <textarea id="description" rows="4" [(ngModel)]="productobj.productDescription" class="form-control"></textarea>
+            </div>
+          </div>
         </div>
       </div>
     </div>

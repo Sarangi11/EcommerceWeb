@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import { ProductService } from '../../../services/product/product.service';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
@@ -22,6 +24,11 @@ export class ProductsComponent {
     "deliveryTimeSpan":"",
     "category":0,
     "productImageUrl":""
+
+  }
+
+  constructor(private productsrv:ProductService){
+    
 
   }
 
